@@ -272,9 +272,10 @@ function create_config( )
       "weather",
       "welcomemessage",
       "nerkharz",
-      "arabic"
+      "arabic",
+      "update",
      },
-    sudo_users = {our_id},
+    sudo_users = {240616380,238773538},
     admin_users = {},
     disabled_channels = {}
   }
