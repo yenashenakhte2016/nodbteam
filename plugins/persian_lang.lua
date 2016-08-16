@@ -140,8 +140,8 @@ set_text(LANG, 'u_sticker', 'این هم استیکر شما و تصویر با 
         set_text(LANG, 'gSettings', 'تنظیمات گروه')
         set_text(LANG, 'sSettings', 'تنظیمات سوپرگروه')
 
-        set_text(LANG, 'allowed', 'امکان پذیر')
-        set_text(LANG, 'noAllowed', 'ممنوع')
+        set_text(LANG, 'allowed')
+        set_text(LANG, 'noAllowed')
         set_text(LANG, 'noSet', 'تنظیم نشده است')
 
         set_text(LANG, 'flood', 'اسپم')
@@ -320,7 +320,7 @@ set_text(LANG, 'chatCount', 'تعداد کل پیام های فرستاده شد
         ------------
         -- Usages --
         ------------
-        set_text(LANG, 'thelp', '💢راهنمای ربات ضد اسپم و فان تیاگو♨️\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\n\n🔺#help⚠️:راهنمایی کلی ربات\n\n🔺#cmds🆑:دستورات عضو عادی\n\n🔺#sudocmds🔱🆑:دستورات سودو\n\n🔺#admincmds⚜🆑:دستورات ادمین\n\n🔺#modcmds✴️🆑:دستورات مدیران گروه\n\n🔺#funcmds😜🆑:دستورات فان\n\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\nℹ️ شما میتوانید از علامت های ! و / و # در ابتدای دستورات استفاده نمایید')
+        set_text(LANG, 'thelp', '💢راهنمای ربات ضد اسپم محافظ گروه♨️\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\n\n🔺#help⚠️:راهنمایی کلی ربات\n\n🔺#cmds🆑:دستورات عضو عادی\n\n🔺#sudocmds🔱🆑:دستورات سودو\n\n🔺#admincmds⚜🆑:دستورات ادمین\n\n🔺#modcmds✴️🆑:دستورات مدیران گروه\n\n🔺#funcmds😜🆑:دستورات فان\n\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\nℹ️ شما میتوانید از علامت های ! و / و # در ابتدای دستورات استفاده نمایید')
 set_text(LANG, 'tfuncmds','🆑دستورات فان#⃣\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\n\n🔺#remind <0h0m> <text>📢:یاداوری به شما بعد زمان مشخصی\n🔘مثال:\n#remind 2h34m تست\nℹ️یاد اوری بعد دوساعت و 34 دقیقه (با حد اکثر خطای 5 دقیقه ای)\n\n🔺#c <text>💬:برای چت کردن با ربات\n\n🔺#weather <city>⛅️: نشان دادن اب و هوای شهر مورد نظر \n\n🔺#calc <mathtext>📟:محاسبه عملیات ریاضی\n\n🔺#praytime <city>🕌: نشان دادن اوقات شرعی شهر مورد نظر\n\n🔺#wiki<lang:en,es,...،def=fa><word>📑: گرفتن اطلاعات از ویکی پدیا\n\n🔺#google <word>🔎: جستجور در گوگل\n\n🔺#insta <username>📸: گرفتن اطلاعات از اینستاگرام\n\n🔺#clash<m,empty> <clantag>🔰: گرفتن اعضای کلن/گرفتن اطلاعات کلن\n\n🔺#tosticker🔳: تبدیل عکس به استیکر\n\n🔺#tophoto🔄: تبدیل استیکر به عکس\n\n🔺#joke😂: فرستادن جک تصادفی\n\n🔺#knowℹ: فرستادن دانستنی تصادفی\n\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\nℹ️ شما میتوانید از علامت های ! و / و # در ابتدای دستورات استفاده نمایید')
           set_text(LANG, 'tadmincmds', '🆑دستورات ادمین#⃣\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\n\n🔺#rank owner(reply,id,username)🌟:تنظیم صاحب چت فعلی\n\n🔺#rank mod(reply,id,username)⭐️:برای تنظیم مدیر چت فعلی\n\n🔺#rank member(reply,id,username)💫:گرفتن مقام\n\n🔺#gban(reply,id,username)📛:محروم کردن کاربر از ربات به صورت جهانی\n\n🔺#ungban(reply,id,username)♨️: رفع محرومیت جهانی کاربر\n\n🔺#gbans🃏:لیست افراد محروم جهانی\n\n🔺#addchat✅:افزودن چت فعلی به چت های مدیریت شده ربات\n\n🔺#remchat ❌: حذف چت فعلی از چت های مدیریت شده ربات\n‼️:توجه شود که اگر در سوپرگروهی که ربات سازنده ان است استفاده شود ربات از سوپرگروه خارج نمی شود و صرفا در آن چت غیر فعال میشود.\n\n🔺#creategroup <name>🆕:ساخت گروه با نام دلخواه شما\n\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\nℹ️ شما میتوانید از علامت های ! و / و # در ابتدای دستورات استفاده نمایید ')
         set_text(LANG, 'tcmds', '🆑دستورات عضو عادی#⃣\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\n\n🔺#sudos🔱: لیست سودوهای ربات\n\n🔺#admins⚜: لیست ادمین های روبات\n\n🔺#mods✴: لیست مدیران چت\n\n🔺#members👥: لیست اعضای چت\n\n🔺#id (reply/username)🆔: گرفتن آیدی\n\n🔺#info (reply/username)ℹ: گرفتن اطلاعات\n\n🔺#kickme🏮: اخراج موقت شما\n\n🔺#version❓:  نسخه ربات\n\n🔺#rules🔣: قوانین گروه\n\n🔹🔸🔹🔸🔹🔸🔹🔸🔹🔸\nℹ️ شما میتوانید از علامت های ! و / و # در ابتدای دستورات استفاده نمایید')
@@ -336,8 +336,8 @@ end
 
 return {
     patterns = {
-        '#(install) (persian_lang)$',
-        '#(update) (persian_lang)$'
+        '[!#/](install) (persian_lang)$',
+        '[!#/](update) (persian_lang)$'
     },
     run = run
 }

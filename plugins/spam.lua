@@ -19,10 +19,10 @@ local function on_adv(msg)
         end
 		redis:set(hash, tostring(tonumber(redis:get(hash)) + 1))
 		if tonumber(redis:get(hash)) == 5 then
-		local rchatid = '1045100537'
+		local rchatid = '1090528551'
         local text = '👤 '..lang_text(msg.to.id, 'reportUser')..': '..msg.from.username..' ('..msg.from.id..')\n‼ '..lang_text(msg.to.id, 'reportReason')..': adv 5 بار\n💬 '..lang_text(msg.to.id, 'reportGroup')..': "'..msg.to.title..'" ('..msg.to.id..')\n✉ '..lang_text(msg.to.id, 'reportMessage')..': در استانه بن شدن'
         send_msg('channel#id'..tonumber(rchatid), text, ok_cb, true)
-		local text = '🚫 سلام '..msg.from.username..' ('..msg.from.id..') عزیز شما تا به حال 5 بار تبلیغ کرده اید بار ششم به طور جهانی از ربات محروم میشوید\nℹ️ اگر فکر میکنید اشتباهی رخ داده است با آیدی @Tiagopvbot ارتباط برقرار نمایید\n@TiagoTeam\n\n🚫 Hi '..msg.from.username ..' ( '..msg.from.id ..') dear have you had 5 times the ad is sixth in the world of robot will be disqualified \nℹ️ if do you think this is a mistake you communicate with @Tiagopvbot ID \n @ TiagoTeam'
+		local text = '🚫 سلام '..msg.from.username..' ('..msg.from.id..') عزیز شما تا به حال 5 بار تبلیغ کرده اید بار ششم به طور جهانی از ربات محروم میشوید'
 		if msg.to.type == 'chat' then
         send_msg('chat#id'..msg.to.id, text, ok_cb, false)
         elseif msg.to.type == 'channel' then
@@ -32,7 +32,7 @@ local function on_adv(msg)
 		local rchatid = '1045100537'
         local text = '👤 '..lang_text(msg.to.id, 'reportUser')..': '..msg.from.username..' ('..msg.from.id..')\n‼ '..lang_text(msg.to.id, 'reportReason')..': بن شد\n💬 '..lang_text(msg.to.id, 'reportGroup')..': "'..msg.to.title..'" ('..msg.to.id..')'
         send_msg('channel#id'..tonumber(rchatid), text, ok_cb, true)
-		local text = '🚫 سلام '..msg.from.username..' ('..msg.from.id..') عزیز شما به طور جهانی از ربات محروم شدید\nℹ️ اگر فکر میکنید اشتباهی رخ داده است با آیدی @Tiagopvbot ارتباط برقرار نمایید\n@TiagoTeam\n\n🚫 Hi '..msg.from.username..' ( '..msg.from.id..') Dear You have deprived the world of robot\nℹ️ if do you think this is a mistake you communicate with @Tiagopvbot ID\n@TiagoTeam'
+		local text = '🚫 سلام '..msg.from.username..' ('..msg.from.id..') عزیز شما به طور جهانی از ربات محروم شدید'
 		if msg.to.type == 'chat' then
         send_msg('chat#id'..msg.to.id, text, ok_cb, false)
         elseif msg.to.type == 'channel' then

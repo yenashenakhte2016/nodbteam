@@ -728,8 +728,8 @@ end
                     text = '⚙ '..lang_text(msg.to.id, 'sSettings')..':\n\n'
                 end
                 local allowed = lang_text(msg.to.id, 'allowed')..' ✅'
-                local noAllowed = lang_text(msg.to.id, 'noAllowed')..' 🚫'
-                local sD = '💠'
+                local noAllowed = lang_text(msg.to.id, 'noAllowed')..' ❌'
+                local sD = '🔹'
 				--Enable/disable Flood
                 local hash = 'anti-flood:'..msg.to.id
                 if redis:get(hash) then
@@ -737,7 +737,7 @@ end
                 else
                     sFlood = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'flood')..': '..sFlood..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'flood')..': '..sFlood..'\n'
 				--Enable/disable bws
                 local hash = 'badwords:'..msg.to.id
                 if not redis:get(hash) then
@@ -745,7 +745,7 @@ end
                 else
                     sBadword = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'badwords')..': '..sBadword..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'badwords')..': '..sBadword..'\n'
 				--Enable/disable porns
                 local hash = 'porns:'..msg.to.id
                 if not redis:get(hash) then
@@ -753,7 +753,7 @@ end
                 else
                     sPorn = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'porns')..': '..sPorn..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'porns')..': '..sPorn..'\n'
 				--Enable/disable adv
                 local hash = 'spam:'..msg.to.id
                 if redis:get(hash) then
@@ -761,7 +761,7 @@ end
                 else
                     sSpam = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'spam')..': '..sSpam..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'spam')..': '..sSpam..'\n'
 
                 --Enable/disable arabic messages
                 local hash = 'arabic:'..msg.to.id
@@ -770,7 +770,7 @@ end
                 else
                     sArabe = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'arabic')..': '..sArabe..'\n'
                 --Enable/disable bots
                 local hash = 'antibot:'..msg.to.id
                 if not redis:get(hash) then
@@ -778,7 +778,7 @@ end
                 else
                     sBots = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'bots')..': '..sBots..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'bots')..': '..sBots..'\n'
                 --Lock/unlock numbers of channel members
                 local hash = 'lockmember:'..msg.to.id
                 if redis:get(hash) then
@@ -786,7 +786,7 @@ end
                 else
                     sLock = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'glockmember')..': '..sLock..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'glockmember')..': '..sLock..'\n'
 				                --Enable/disable setphoto
                 local hash = 'setphoto:'..msg.to.id
                 if not redis:get(hash) then
@@ -794,7 +794,7 @@ end
                 else
                     sSPhoto = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'setphoto')..': '..sSPhoto..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'setphoto')..': '..sSPhoto..'\n'
 
                 --Enable/disable changing group name
                 local hash = 'name:'..msg.to.id
@@ -803,7 +803,7 @@ end
                 else
                     sName = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'gName')..': '..sName..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'gName')..': '..sName..'\n'
 				--Enable/disable Stickers
                 local hash = 'stickers:'..msg.to.id
                 if redis:get(hash) then
@@ -811,7 +811,7 @@ end
                 else
                     sStickers = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'stickers')..': '..sStickers..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'stickers')..': '..sStickers..'\n'
 			    
                 --Enable/disable send photos
                 local hash = 'photo:'..msg.to.id
@@ -820,7 +820,7 @@ end
                 else
                     sPhoto = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'photos')..': '..sPhoto..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'photos')..': '..sPhoto..'\n'
 
                 --Enable/disable gifs
                 local hash = 'gifs:'..msg.to.id
@@ -829,7 +829,7 @@ end
                 else
                     sGif = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'gifs')..': '..sGif..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'gifs')..': '..sGif..'\n'
 
                 --Enable/disable send audios
                 local hash = 'audio:'..msg.to.id
@@ -838,7 +838,7 @@ end
                 else
                     sAudio = allowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'audios')..': '..sAudio..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'audios')..': '..sAudio..'\n'
 
                 --Enable/disable contacts
                 local hash = 'contacts:'..msg.to.id
@@ -847,7 +847,7 @@ end
                 else
                     sContact = noAllowed
                 end
-                text = text..sD..' '..lang_text(msg.to.id, 'contacts')..': '..sContact..'\n\n'
+                text = text..sD..' '..lang_text(msg.to.id, 'contacts')..': '..sContact..'\n'
 				
                 local hash = 'langset:'..msg.to.id
                 if redis:get(hash) == 'fa' then

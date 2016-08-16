@@ -106,8 +106,8 @@ local function run(msg, matches)
 		set_text(LANG, 'gSettings', 'Group settings')
 		set_text(LANG, 'sSettings', 'SuperGroup settings')
 
-		set_text(LANG, 'allowed', 'allowed')
-		set_text(LANG, 'noAllowed', 'not allowed')
+		set_text(LANG, 'allowed')
+		set_text(LANG, 'noAllowed')
 		set_text(LANG, 'noSet', 'not set')
 
 		set_text(LANG, 'stickers', 'Stickers')
@@ -378,8 +378,8 @@ end
 
 return {
 	patterns = {
-		'#(install) (english_lang)$',
-		'#(update) (english_lang)$'
+		'[!#/](install) (english_lang)$',
+		'[!#/](update) (english_lang)$'
 	},
 	run = run
 }
